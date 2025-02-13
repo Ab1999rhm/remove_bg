@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Removal Tool</title>
+    <meta name="description" content="AI-Powered Background Removal Tool - Private and Secure, Lightning Fast">
+    <meta name="keywords" content="background removal, AI, image editing, photo editing, background eraser">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Background Removal Tool</h1>
+        <nav>
+            <a href="pricing.html">Pricing</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>AI-Powered Background Removal</h1>
+        <p class="tagline">Private and Secure, Lightning Fast</p>
+        <div class="upload-section">
+            <div class="drop-zone" id="dropZone">
+                Drag & Drop an Image or
+                <input type="file" id="imageUpload" accept="image/*" />
+                <label for="imageUpload" class="upload-label">Choose an Image</label>
+            </div>
+        </div>
+        <div class="result-section">
+            <img id="originalImage" src="#" alt="Original Image" style="display: none;" />
+            <img id="processedImage" src="#" alt="Processed Image" style="display: none;" />
+        </div>
+        <button id="removeBackgroundBtn" disabled>Remove Background</button>
+        <button id="downloadBtn" style="display: none;">Download Processed Image</button>
+
+        <!-- Payment Section -->
+        <div class="payment-section" id="paymentSection" style="display: none;">
+            <p>You've reached the free usage limit. To continue, please make a payment:</p>
+            <p>
+                <strong>10 Uses:</strong> 100 ETB via Telebirr (0929570426) or CBE Account (1000582835048).
+                <br>
+                <strong>Unlimited Uses:</strong> 500 ETB via Telebirr (0929570426) or CBE Account (1000582835048).
+            </p>
+            <p>Upload your transaction receipt after payment:</p>
+            <input type="file" id="receiptUpload" accept="image/*" />
+            <button id="submitReceiptBtn">Submit Receipt</button>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Free Plan</h3>
+                <p>3 Free Uses</p>
+                <p>HD Resolution</p>
+                <p>Basic Support</p>
+                <button disabled>Current Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h3>10 Uses</h3>
+                <p>100 ETB</p>
+                <p>HD Resolution</p>
+                <p>Commercial License</p>
+                <button id="buy10Uses">Get Now</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Unlimited</h3>
+                <p>500 ETB</p>
+                <p>HD Resolution</p>
+                <p>Commercial License</p>
+                <button id="buyUnlimited">Get Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <p>&copy; 2025 Background Removal Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <!-- Google AdSense Code -->
+    <script data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</body>
+</html>

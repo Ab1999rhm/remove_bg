@@ -1,0 +1,89 @@
+/* Add styles for better UI/UX */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+.upload-section, .result-section, .payment-section, .pricing-table {
+    margin: 2rem 0;
+}
+.drop-zone {
+    border: 2px dashed #ccc;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+.drop-zone.dragover {
+    border-color: #4CAF50;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+button:disabled {
+    background-color: #ccc;
+}
+.pricing-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h1, h2 {
+    color: #4CAF50;
+}
+p, ul {
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
